@@ -206,11 +206,12 @@
 				};
 			};
 			buildConfigurationList = 2E3A6A0C2DF8900F00764F5A /* Build configuration list for PBXProject "WWDC25" */;
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 2E3A6A082DF8900F00764F5A;
 			minimizedProjectReferenceProxies = 1;
