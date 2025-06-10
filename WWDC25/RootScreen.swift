@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlarmKit
 
 struct RootScreen: View {
   var body: some View {
@@ -19,7 +20,7 @@ struct RootScreen: View {
       .navigationDestination(for: NavigationPath.self) { path in
         switch path {
         case .alarmKit:
-          AlarmScreen()
+          AlarmScreen(viewModel: .init(alarmManager: .shared))
         }
       }
     }

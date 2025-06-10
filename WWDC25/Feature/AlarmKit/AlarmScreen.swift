@@ -9,20 +9,17 @@ import SwiftUI
 import AlarmKit
 
 struct AlarmScreen: View {
+  @State var viewModel: AlarmScreenViewModel
 
   var body: some View {
-    Text("AlarmScreen!")
-  }
-
-  private func requestAuthorization() async {
-    do {
-      let status = try await AlarmManager.shared.requestAuthorization()
-    } catch {
-
+    Button {
+      Task { await viewModel.didTapRequestAuthorization() }
+    } label: {
+      Text("Request Authorization")
     }
   }
 }
 
 #Preview {
-  AlarmScreen()
+  AlarmScreen(viewModel: .init(alarmManager: AlarmManager.shared))
 }
