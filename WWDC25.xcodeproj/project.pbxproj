@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2E570E3A2DF897D500958A71 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E570E392DF897D500958A71 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2E3A6A212DF8901700764F5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		2E3A6A112DF8900F00764F5A /* WWDC25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3A6A202DF8901700764F5A /* WWDC25Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC25Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3A6A2A2DF8901700764F5A /* WWDC25UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC25UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E570E392DF897D500958A71 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2E3A6A472DF894D800764F5A /* Exceptions for "WWDC25" folder in "WWDC25" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2E3A6A102DF8900F00764F5A /* WWDC25 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2E3A6A132DF8900F00764F5A /* WWDC25 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2E3A6A472DF894D800764F5A /* Exceptions for "WWDC25" folder in "WWDC25" target */,
+			);
 			path = WWDC25;
 			sourceTree = "<group>";
 		};
@@ -79,6 +97,7 @@
 				2E3A6A232DF8901700764F5A /* WWDC25Tests */,
 				2E3A6A2D2DF8901700764F5A /* WWDC25UITests */,
 				2E3A6A122DF8900F00764F5A /* Products */,
+				2E570E392DF897D500958A71 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E570E3A2DF897D500958A71 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +418,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WWDC25/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -441,6 +462,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WWDC25/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
