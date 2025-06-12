@@ -4,5 +4,7 @@
 <dict>
 	<key>NSAlarmKitUsageDescription</key>
 	<string>あなたがWWDCを定期的にチェックするのをリマインドするために利用します</string>
+  <key>UIDesignRequiresCompatibility</key>
+  <false/>
 </dict>
 </plist>

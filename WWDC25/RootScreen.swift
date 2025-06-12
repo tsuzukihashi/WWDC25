@@ -6,23 +6,30 @@
 //
 
 import SwiftUI
-import AlarmKit
 
 struct RootScreen: View {
   var body: some View {
-    NavigationStack {
-      List {
-        NavigationLink(value: NavigationPath.alarmKit) {
-          Text("AlarmKit")
+    TabView {
+      ContentsListScreen()
+        .tabItem {
+          Label("リスト", systemImage: "list.bullet")
         }
-      }
-      .navigationTitle("WWDC25")
-      .navigationDestination(for: NavigationPath.self) { path in
-        switch path {
-        case .alarmKit:
-          AlarmScreen(viewModel: .init(alarmManager: .shared))
+      SettingScreen()
+        .tabItem {
+          Label("設定", systemImage: "gearshape")
         }
+    }
+    .tint(.green)
+    .overlay(alignment: .bottomTrailing) {
+      Button {
+
+      } label: {
+        Image(systemName: "plus")
       }
+      .buttonStyle(.glass)
+      .glassEffect(.regular, in: .circle)
+      .padding(.trailing)
+      .padding(8)
     }
   }
 }

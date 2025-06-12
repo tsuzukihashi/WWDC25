@@ -17,6 +17,7 @@ struct AlarmScreen: View {
     } label: {
       Text("Request Authorization")
     }
+    .buttonStyle(.glass)
   }
 }
 
